@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/**/*
+
+# JetBrains
+.idea/**/*
+
+# Dist folder
+dist/**/*
