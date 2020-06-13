@@ -1,5 +1,5 @@
 {
-  "name": "diamodsquarenode",
+  "name": "diamodsquare",
   "version": "1.0.1",
   "description": "Classic Diamond-Square Algorithm",
   "main": "dist/index.js",
