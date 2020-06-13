@@ -5,7 +5,7 @@ This is a TypeScript implementation of the classic Diamond-Square Algorithm for 
 
 ### NPM
 
-> npm install sibvrv/DiamondSquareNode
+> npm install sibvrv/DiamondSquare
 
 ### Available scripts
 
@@ -14,7 +14,7 @@ This is a TypeScript implementation of the classic Diamond-Square Algorithm for 
 ### Example
 
 ```typescript
-import {DiamondSquare} from 'DiamondSquareNode'
+import {DiamondSquare} from 'DiamondSquare'
 
 const size = 512;
 const range = 32768;
