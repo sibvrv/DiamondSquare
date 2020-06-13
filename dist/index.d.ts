@@ -9,7 +9,7 @@ export interface PseudoRandomNumberGenerator {
  */
 export declare class DiamondSquare {
     size: number;
-    prng: PseudoRandomNumberGenerator | undefined;
+    prng?: PseudoRandomNumberGenerator | undefined;
     /**
      * 1D HeightMap
      */

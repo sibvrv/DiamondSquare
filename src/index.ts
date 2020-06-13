@@ -49,23 +49,22 @@ export class DiamondSquare {
       return;
     }
 
-    const {map, size, step} = this;
+    const {map, size} = this;
 
     const a = map[y1 * size + x1];
     const b = map[y1 * size + x2];
     const c = map[y2 * size + x1];
     const d = map[y2 * size + x2];
-    const e = Math.ceil((a + b + c + d) / 4 + this.random() * range);
+
+    const e = (a + b + c + d) / 4 + this.random() * range;
 
     map[(y1 + hy) * size + x1 + hx] = e;
-    map[(y1 + hy) * size + x1] = Math.ceil((a + c + e) / 3 + this.random() * range);
-    map[(y1) * size + x1 + hx] = Math.ceil((a + b + e) / 3 + this.random() * range);
-    map[(y1 + hy) * size + x2] = Math.ceil((b + d + e) / 3 + this.random() * range);
-    map[(y2) * size + x1 + hx] = Math.ceil((c + d + e) / 3 + this.random() * range);
+    map[(y1 + hy) * size + x2] = (b + d + e) / 3 + this.random() * range;
+    map[(y2) * size + x1 + hx] = (c + d + e) / 3 + this.random() * range;
 
-    step(x1, y1, x1 + hx, y1 + hy, range / 2);
-    step(x1 + hx, y1, x2, y1 + hy, range / 2);
-    step(x1, y1 + hy, x1 + hx, y2, range / 2);
-    step(x1 + hx, y1 + hy, x2, y2, range / 2);
+    this.step(x1, y1, x1 + hx, y1 + hy, range / 2);
+    this.step(x1 + hx, y1, x2, y1 + hy, range / 2);
+    this.step(x1, y1 + hy, x1 + hx, y2, range / 2);
+    this.step(x1 + hx, y1 + hy, x2, y2, range / 2);
   }
 }

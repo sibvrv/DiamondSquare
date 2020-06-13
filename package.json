@@ -11,6 +11,6 @@
   "author": "Roman Vereshchagin",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^2.8.1"
+    "typescript": "^3.9.5"
   }
 }
